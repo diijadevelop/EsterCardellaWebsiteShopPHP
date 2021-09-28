@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200;300;400;500;700&display=swap');
+@font-face {
+  font-family: 'AngerStyles';
+  src: url('../font/AngerStyles.woff') format('woff');
+}
+body, html {
+    overflow-x: hidden !important;
+}
+body, hr{
+  color: rgba(255, 255, 255, 0.54);
+  border-color: rgba(255, 255, 255, 0.54);
+}
+.darker{
+  background: black;
+}
+section.bg-home{
+  position: relative;
+  margin-bottom: 20px;
+  clip-path: polygon(0 0, 100% 0, 100% 91%, 18% 100%, 38% 87%, 0 93%);
+
+}
+section{
+  margin-bottom: 2em;
+}
+
+section.bg-home::after{
+  content: '';
+  background: url('../img/HD/Donna_con_serpenti.jpg') no-repeat center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 91%, 18% 100%, 38% 87%, 0 93%);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.1;
+  width: 100%;
+  height: 100%;
+
+}
+
+
+.menu-icons i{
+  margin: 0.5em;
+}
+.go-store{
+display: block;
+color: rgba(103, 58, 183, 0.63);
+
+  background: transparent;
+  font-size: 0.9rem;
+  font-weight: 500;
+  position: relative;
+  margin: 0 1em 0 auto;
+}
+.go-store:hover{
+  color: #673ab7;
+  font-weight: bolder;
+}
+
+.title{
+  font-weight: bolder;
+  /*text-transform: uppercase;*/
+  letter-spacing: 0.2rem;
+}
+.title-large{
+  font-size: 4rem;
+}
+.textGradient {
+  color: #673ab7; /* fix for not webkit browsers */
+  background: linear-gradient(#673ab7, #314da3);
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.article{
+  width: 80%;
+}
+
+/* CAROUSEL SLIDE HOME*/
+#carousel{
+  opacity: 0.3;
+
+}
+.carousel-item img{
+  clip-path: url("../img/path.svg");
+
+}
+/*
+.carousel-indicators li{
+  background-image: linear-gradient(#673ab7, #314da3);
+}
+*/
+
+
+
+.h1, .h1-large{
+  font-family: 'AngerStyles';
+}
+.article-secondary{
+  padding: 2em 0;
+}
+
+.footer-logo{
+  font-family: 'AngerStyles', cursive;
+  font-size: 3rem;
+}
+#footer{
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-bg{
+  position: absolute;
+  top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-image: linear-gradient(#673ab7, #314da3);
+   clip-path: polygon(100% 0, 100% 0, 100% 100%, 0 100%, 0 6%, 26% 0, 9% 13%);
+
+
+
+}
+.footer-content{
+  position: relative;
+  margin-top: 10em;
+  color: black;
+}
+.footer-content a:hover{
+  color:inherit;
+}
+
+.fa-facebook, .fa-instagram, .fa-deviantart, .fa-artstation, .fa-envelope{
+font-size: 2em;
+    }
+    .fa-facebook:hover, .fa-instagram:hover, .fa-deviantart:hover, .fa-artstation:hover, .fa-envelope:hover{
+opacity: 0.7;
+    }
+#privacy{
+  margin-top: 2em;
+}
+/* GALLERY */
+
+#thumbs{float:left;width:200px;} #thumbs img{display:block;margin:0 0 10px;cursor:pointer;} #viewer{float:left;}
+
+/* SHOP */
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.fa-home, .fa-calendar-alt, .fa-shopping-cart{
+  font-size: 1rem;
+}
+
+            /* TOGGLE */
+
+                  /* Set the border color */
+
+
+      .navbar-toggler-icon {
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        vertical-align: middle;
+        background: no-repeat center center;
+
+      }
+
+
+    .navbar-toggler {
+        border: 2px solid transparent;
+        padding: 0.25rem 0.75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        border-radius: 0.25rem;
+
+        background: transparent;
+
+      }
+      #navbarToggler{
+        order: 1;
+        padding-top: 1rem;
+      }
+
+        .navbar-toggler:hover, .navbar-toggler:focus {
+          text-decoration: none;
+
+    }
+
+            /* Setting the stroke to green using rgb values (0, 128, 0) */
+
+  .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(143, 132, 210)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+
+.logs button{
+  padding: 0.3rem;
+  margin-top: 0;
+  font-size: 0.8rem;
+}
+.colorlib-navbar-brand{
+  order:1;
+  padding-top: 1rem;
+  padding-left: 0;
+}
+
+
+.product-image {
+    width: 100%
+}
+
+.dot {
+    height: 7px;
+    width: 7px;
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-top: 3px;
+    background-color: blue;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.spec-1 {
+    color: #938787;
+    font-size: 15px;
+}
+
+h5 {
+    font-weight: 400
+}
+
+.para {
+    font-size: 16px
+}
+/*    DETAILS OF PRODUCT   */
+
+#content-wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.column{
+	width: 600px;
+	padding: 10px;
+
+}
+#featured{
+	cursor: pointer;
+	border: 2px solid black;
+}
+
+.thumbnail{
+	object-fit: cover;
+	max-width: 180px;
+	max-height: 100px;
+	cursor: pointer;
+	opacity: 0.5;
+	margin: 5px;
+	border: 2px solid black;
+
+}
+.thumbnail:hover{
+	opacity:1;
+}
+
+.active{
+	opacity: 1;
+}
+
+#slide-wrapper{
+	margin-top: 30px;
+	max-width: 500px;
+	display: flex;
+	min-height: 100px;
+	align-items: center;
+}
+
+#slider{
+	width: 640px;
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+
+}
+
+#slider::-webkit-scrollbar {
+		width: 8px;
+
+}
+
+#slider::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+
+}
+
+#slider::-webkit-scrollbar-thumb {
+  background-color: purple;
+  outline: 1px solid slategrey;
+   border-radius: 100px;
+
+}
+
+#slider::-webkit-scrollbar-thumb:hover{
+    background-color: #18b5ce;
+}
+
+.arrow{
+  font-size: 1.5em;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.arrow:hover{
+	opacity: .5;
+	width: 35px;
+	height: 35px;
+}
+
+.navbar-toggler>.close {
+    display:inline;
+}
+.navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
+    display:none;
+}
+
+
+/*    LOGIN:   ;*/
+.login-body{
+background-image: url('g');
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+}
+
+
+
+.card{
+height: 370px;
+margin-top: auto;
+margin-bottom: auto;
+width: 400px;
+background-color: rgba(0,0,0,0.5) !important;
+}
+
+.social_icon span{
+font-size: 60px;
+margin-left: 10px;
+color: #673ab7; /* fix for not webkit browsers */
+background: linear-gradient(#673ab7, #314da3);
+background-size: cover;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+}
+
+.social_icon span:hover{
+color: white;
+cursor: pointer;
+}
+
+.card-header h3{
+color: white;
+}
+
+.social_icon{
+position: absolute;
+right: 20px;
+top: -45px;
+}
+
+.input-group-prepend span{
+width: 50px;
+background-color: #673ab7;
+color: black;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember{
+color: white;
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.login_btn{
+color: black;
+width: 100px;
+}
+
+.login_btn:hover{
+color: black;
+background-color: white;
+}
+
+.links{
+color: white;
+}
+
+.links a{
+margin-left: 4px;
+}
+
+/*    REGISTER     */
+
+.divider-text {
+    position: relative;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.divider-text span {
+    padding: 7px;
+    font-size: 12px;
+    position: relative;
+    z-index: 2;
+}
+.divider-text:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    top: 55%;
+    left: 0;
+    z-index: 1;
+}
+
+.btn-facebook {
+    background-color: #405D9D;
+    color: #fff;
+}
+.btn-twitter {
+    background-color: #42AEEC;
+    color: #fff;
+}
+.fa-envelope.signup{
+  font-size: inherit;
+}
+/*        MEDIA           */
+
+
+@media only screen and (max-width:400px ) {
+
+  section.bg-home{
+    padding-bottom: 3em;
+  }
+  section.bg-home::after{
+    background: url('../img/Donna_con_serpenti-low.jpg') no-repeat center top;
+
+  }
+}
+  @media only screen and (min-width:780px && max-width:1000px){
+    #footer{
+      padding-top: 50em;
+    }
+  }
+
+  @media only screen and (min-width:500px){
+
+
+    #colorlib-main-nav .logo {
+      font-size: 40px;
+    }
+    .carousel-item img{
+      max-width: 70%;
+    }
+  }
+
+
+@media only screen and (max-width:768px) {
+  .sidebar-collapse{
+    position: absolute;
+    height: 100vh;
+    right: 0;
+    padding-right: 2em;
+    padding-top: 2em;
+    top:4rem;
+    background-color: black;
+  }
+
+
+}
+
+
+@media only screen and (min-width:768px) {
+  .fa-facebook, .fa-instagram, .fa-deviantart, .fa-artstation, .fa-envelope{
+  font-size: 3em;
+  }
+
+  .go-store{
+    font-size: 1.5rem;
+  }
+
+  header .colorlib-navbar-brand .colorlib-logo {
+    font-size: 2.5rem;
+    font-family: 'AngerStyles';
+  }
+
+  #colorlib-main-nav .colorlib-table .img:after{
+    background-size: cover;
+    background: url('../img/cemetery_300.jpg') right top no-repeat;
+
+  }
+  .h1{
+   font-size: 2rem;
+  }
+  .bg-home{
+    height: 100%;
+    padding-bottom: 6em;
+  }
+
+  /*SHOP*/
+  #navbarToggler{
+    order: 0;
+    padding-top: 1rem;
+  }
+  .logs button{
+    padding: 0.5rem;
+  }
+    .colorlib-navbar-brand{
+    order:-1;
+  }
+}
