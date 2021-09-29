@@ -1,56 +1,35 @@
 <?php include 'template-parts\shop-header.php' ?>
 
-      <div class="container mt-5 mb-5 pt-5">
-          <div class="d-flex justify-content-center row mt-5">
-              <div class="col-md-10">
-                  <div class="row p-2 bg-black ">
-                      <div class=" col-3 mt-1">
-                        <img class="img-fluid img-responsive rounded product-image" src="https://www.seekpng.com/png/full/17-176282_free-vector-t-shirt-vector-template-t-shirt.png"></div>
-                      <div class="col-6 mt-1">
-                          <h5 class="h5 text-light">ESEMPIO 1</h5>
-                          <div class="d-flex flex-row">
-                          </div>
-                          <div class="mt-1 mb-1 spec-1"><span>100% cotton</span><span class="dot"></span><span>Light weight</span><span class="dot"></span><span>Best finish<br></span></div>
-                          <div class="mt-1 mb-1 spec-1"><span>Unique design</span><span class="dot"></span><span>For men</span><span class="dot"></span><span>Casual<br></span></div>
-                          <p class="text-justify text-truncate para mb-0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.<br><br></p>
-                      </div>
-                      <div class="align-items-center align-content-center col-3 border-left mt-1">
-                          <div class="d-flex flex-row align-items-center">
-                              <h4 class="mr-1 text-light">$13.99</h4>
-                          </div>
-                          <h6 class="text-success">Free shipping</h6>
-                          <div class="d-flex flex-column mt-4">
-                            <button class="btn btn-primary btn-sm" type="button"><a href="details1.php">Details</a></button>
-                            <button class="btn btn-outline-primary btn-sm mt-2" type="button">Add to cart</button></div>
-                      </div>
-                  </div>
+<div class="container py-5 my-5">
+  <div class="row my-5 text-center">
 
-
-
-                  <div class="row p-2 mt-3 bg-black ">
-                      <div class=" col-3 mt-1">
-                        <img class="img-fluid img-responsive rounded product-image" src="https://www.seekpng.com/png/full/17-176282_free-vector-t-shirt-vector-template-t-shirt.png"></div>
-                      <div class="col-6 mt-1">
-                          <h5 class="h5 text-light">ESEMPIO 2</h5>
-                          <div class="d-flex flex-row">
-                          </div>
-                          <div class="mt-1 mb-1 spec-1"><span>100% cotton</span><span class="dot"></span><span>Light weight</span><span class="dot"></span><span>Best finish<br></span></div>
-                          <div class="mt-1 mb-1 spec-1"><span>Unique design</span><span class="dot"></span><span>For men</span><span class="dot"></span><span>Casual<br></span></div>
-                          <p class="text-justify text-truncate para mb-0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.<br><br></p>
-                      </div>
-                      <div class="align-items-center align-content-center col-3 border-left mt-1">
-                          <div class="d-flex flex-row align-items-center">
-                              <h4 class="mr-1 text-light">$13.99</h4>
-                          </div>
-                          <h6 class="text-success">Free shipping</h6>
-                          <div class="d-flex flex-column mt-4"><button class="btn btn-primary btn-sm" type="button">Details</button><button class="btn btn-outline-primary btn-sm mt-2" type="button">Add to cart</button></div>
-                      </div>
-                  </div>
-
-              </div>
-          </div>
+    <div class="card p-5 mb-5 mb-md-0 col-12 col-md-6 mb-5" style="width: 18rem; ">
+      <a href="poster.php" class="card-img-top d-block" style="width: 100%; height: 20rem; border-radius: 20px; opacity: 0.5; background-image: url('assets/img/cemetery_300-low.jpg')">
+      </a>
+      <div class="card-body">
+        <h5 class="card-title h1 textGradient">Posters!</h5>
+        <p class="card-text">Le stampe pronte all'acquisto delle mie illustrazioni.</p>
       </div>
+    </div>
+
+
+    <div class="card p-5 mt-5 mt-md-0 col-12 col-md-6 mt-5" style="width: 18rem; ">
+      <div class="card-img-top mt-5 mt-md-0 d-block" style="width: 100%; height: 20rem; border-radius: 20px; opacity: 0.5; background-image: url('assets/img/store/tshirt.jpg')">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title h1 textGradient">T-Shirts!</h5>
+        <p class="card-text">Magliette fighissime.</p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="p-5">
+
+</div>
 
 
 
-      <?php include 'template-parts\footer.php' ?>
+<?php include 'template-parts\footer.php' ?>
