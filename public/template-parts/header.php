@@ -26,12 +26,12 @@
         <div class="colorlib-table-cell js-fullheight">
           <div class="row no-gutters">
             <div class="col-md-12 text-center">
-              <h1 class="mb-4"><a href="index.php" class="logo textGradient">Ester Cardella</a></h1>
+              <h1 class="mb-4"><a href="<?php echo ROOT_URL; ?>public/?page=homepage" class="logo textGradient">Ester Cardella</a></h1>
               <ul>
-                <li ><a href="<?php echo ROOT_URL; ?>public/?page=homepage.php"><span>Home</span></a></li>
-                <li><a href="<?php echo ROOT_URL; ?>public/?page=bio.php"><span>About</span></a></li>
-                <li><a href="<?php echo ROOT_URL; ?>public/?page=gallery.php"><span>Gallery</span></a></li>
-                <li><a href="<?php echo ROOT_URL; ?>public/?page=contact.php"><span>Contact</span></a></li>
+                <li ><a href="<?php echo ROOT_URL; ?>public/?page=homepage"><span>Home</span></a></li>
+                <li><a href="<?php echo ROOT_URL; ?>public/?page=bio"><span>About</span></a></li>
+                <li><a href="<?php echo ROOT_URL; ?>public/?page=gallery"><span>Gallery</span></a></li>
+                <li><a href="<?php echo ROOT_URL; ?>public/?page=contact"><span>Contact</span></a></li>
                 <li class="active "><a href="<?php echo ROOT_URL; ?>public/shop"><span>Store</span></a></li>
 
               </ul>
@@ -53,7 +53,7 @@
               <a class="nav-link" href="https://www.deviantart.com/estercardella?fbclid=IwAR16D7P5j-uWA24KvQ8jSdPrHontvrmHsr106L7T7_5vWJgUK9zw13p5BdI" target="_blank" title="Deviantart"><i class="fab fa-deviantart"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" title="ArtStation"href="https://l.facebook.com/l.php?u=https%3A%2F%2Festercardella.artstation.com%2F%3Ffbclid%3DIwAR0y7fkmBvAtrg80_KY09QBFXrzt3-v2LFBv7c4y0xs1ql3cIc2798WCLyw&h=AT00sNvpwaGH9Myd7ewVQ083R0pAVv-S2pBYcP8oOjzdGU3sXgDnSaYrmhEL1cifRPBHuA4TLXYq1WHqVUoni4ppRnDtL9gySNf3MdRGnHrBreiJzc5LSk_iVN-9H5zFE-SnHQ" target="_blank"><i class="fab fa-artstation"></i></a>
+              <a class="nav-link" title="ArtStation"href="https://l.facebook.com/l?u=https%3A%2F%2Festercardella.artstation.com%2F%3Ffbclid%3DIwAR0y7fkmBvAtrg80_KY09QBFXrzt3-v2LFBv7c4y0xs1ql3cIc2798WCLyw&h=AT00sNvpwaGH9Myd7ewVQ083R0pAVv-S2pBYcP8oOjzdGU3sXgDnSaYrmhEL1cifRPBHuA4TLXYq1WHqVUoni4ppRnDtL9gySNf3MdRGnHrBreiJzc5LSk_iVN-9H5zFE-SnHQ" target="_blank"><i class="fab fa-artstation"></i></a>
             </li>
 
           </ul>
@@ -66,7 +66,7 @@
       <header class="d-flex">
       	<div class="container">
 	        <div class="colorlib-navbar-brand">
-	          <a class="colorlib-logo mt-0" href="<?php echo ROOT_URL; ?>public/?page=homepage.php">Ester Cardella</a>
+	          <a class="colorlib-logo mt-0" href="<?php echo ROOT_URL; ?>public/?page=homepage">Ester Cardella</a>
 	        </div>
           <div class="d-flex align-items-center">
             <a href="<?php echo ROOT_URL; ?>public/shop" class="go-store textGradient btn text-uppercase">Store</a>

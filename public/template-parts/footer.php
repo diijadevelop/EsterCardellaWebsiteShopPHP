@@ -8,13 +8,13 @@
     </div>
     <ul id="nav-footer" class="nav justify-content-center text-uppercase font-weight-bold text-center text-sm-left d-block d-sm-flex">
       <li class="nav-item ">
-        <a class="nav-link" href="<?php echo ROOT_URL; ?>public/?page=bio.php">&nbsp;&nbsp;&nbsp;Bio&nbsp;&nbsp;&nbsp;</a>
+        <a class="nav-link" href="<?php echo ROOT_URL; ?>public/?page=bio">&nbsp;&nbsp;&nbsp;Bio&nbsp;&nbsp;&nbsp;</a>
       </li>
       <li class="nav-item ">
-        <a class="nav-link" href="<?php echo ROOT_URL; ?>public/?page=gallery.php">&nbsp;&nbsp;&nbsp;Gallery&nbsp;&nbsp;&nbsp;</a>
+        <a class="nav-link" href="<?php echo ROOT_URL; ?>public/?page=gallery">&nbsp;&nbsp;&nbsp;Gallery&nbsp;&nbsp;&nbsp;</a>
       </li>
       <li class="nav-item ">
-        <a class="nav-link" href="<?php echo ROOT_URL; ?>public/?page=contact.php">&nbsp;&nbsp;&nbsp;Contatti&nbsp;&nbsp;&nbsp;</a>
+        <a class="nav-link" href="<?php echo ROOT_URL; ?>public/?page=contact">&nbsp;&nbsp;&nbsp;Contatti&nbsp;&nbsp;&nbsp;</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="<?php echo ROOT_URL; ?>public/shop">&nbsp;&nbsp;&nbsp;Shop&nbsp;&nbsp;&nbsp;</a>

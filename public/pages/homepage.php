@@ -9,7 +9,7 @@
                   Ester Cardella nata a Palermo classe '92 ha studiato al liceo artistico e alla scuola del fumetto della sua città.
       Subito dopo gli studi comincia a lavorare con diversi committenti privati, comincia così a fare esperienza nel mondo delle illustrazioni a tema erotico e dark, dando una personalità alle donne che disegna, rendendole forti e indipendenti, oltre che ammiccanti e sensuali, coscienti della propria bellezza.
 </p>
-      <a href="http://localhost/EsterCardellaProva/public/?page=bio.php"><button type="button" class="btn btn-lg">Read More</button>
+      <a href="<?php echo ROOT_URL; ?>public/?page=bio"><button type="button" class="btn btn-lg">Read More</button>
       </a>
 	          </div>
 	        </div>
@@ -43,7 +43,7 @@
             <hr style="width:60%;">
             <p class="article text-light">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <a href="http://localhost/EsterCardellaProva/public/?page=gallery.php"><button type="button" class="btn btn-lg">Gallery</button>
+              <a href="<?php echo ROOT_URL; ?>public/?page=gallery"><button type="button" class="btn btn-lg">Gallery</button>
               </a>
             </div>
           </div>
