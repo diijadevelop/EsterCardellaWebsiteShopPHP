@@ -8,16 +8,16 @@
     </div>
     <ul id="nav-footer" class="nav justify-content-center text-uppercase font-weight-bold text-center text-sm-left d-block d-sm-flex">
       <li class="nav-item ">
-        <a class="nav-link" href="bio.php">&nbsp;&nbsp;&nbsp;Bio&nbsp;&nbsp;&nbsp;</a>
+        <a class="nav-link" href="<?php echo ROOT_URL; ?>public/?page=bio.php">&nbsp;&nbsp;&nbsp;Bio&nbsp;&nbsp;&nbsp;</a>
       </li>
       <li class="nav-item ">
-        <a class="nav-link" href="gallery.php">&nbsp;&nbsp;&nbsp;Gallery&nbsp;&nbsp;&nbsp;</a>
+        <a class="nav-link" href="<?php echo ROOT_URL; ?>public/?page=gallery.php">&nbsp;&nbsp;&nbsp;Gallery&nbsp;&nbsp;&nbsp;</a>
       </li>
       <li class="nav-item ">
-        <a class="nav-link" href="contact.php">&nbsp;&nbsp;&nbsp;Contatti&nbsp;&nbsp;&nbsp;</a>
+        <a class="nav-link" href="<?php echo ROOT_URL; ?>public/?page=contact.php">&nbsp;&nbsp;&nbsp;Contatti&nbsp;&nbsp;&nbsp;</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="shop.php">&nbsp;&nbsp;&nbsp;Shop&nbsp;&nbsp;&nbsp;</a>
+        <a class="nav-link" href="<?php echo ROOT_URL; ?>public/shop">&nbsp;&nbsp;&nbsp;Shop&nbsp;&nbsp;&nbsp;</a>
       </li>
     </ul>
     <hr class="mx-auto my-30 my-md-40">
@@ -47,19 +47,18 @@
   </div>
 </footer>
 
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/popper.js/"></script>
-<script src="assets/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://kit.fontawesome.com/78ffc68b9f.js" crossorigin="anonymous"></script>
 
-<script src="assets/js/main.js"></script>
+<script src="../assets/js/main.js"></script>
 
 
-<script src="assets\js\lightgallery.min.js"></script>
-<script src="assets\js\lg-fullscreen.min.js"></script>
-<script src="assets\js\lg-zoom.min.js"></script>
-<script src="assets\js\lg-thumbnail.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.2.1/lightgallery.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0-beta.2/plugins/fullscreen/lg-fullscreen.min.js" integrity="sha512-DzxO8pqFx7E5gbBhlJcqI2KYWMs14FWl4oFYHLOEj2/Ju6dIuUhwZDGRailzJHLAym4co2Z+nnhrCuy6ht/NqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0-beta.2/plugins/zoom/lg-zoom.min.js" integrity="sha512-0mtVOmUIpVwfDhhqVsG6tbynJh6BSKhw4WTNGB9GAhQrpy/4ZmB6KO/5hY70VRV7i8SRCXUkohPsqxPguEh9Lw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0-beta.2/plugins/thumbnail/lg-thumbnail.min.js" integrity="sha512-wmnYlU0dJBHofmlz4UloFCz/k39StVgxOAVMr5HYHPEbEYNGbgvGoD5yLMln07hvbDYpDJyW0sHU2BVjDgiIXw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script type="text/javascript">
 lightGallery(document.getElementById('lightgallery'), {
   plugins: [lgZoom, lgThumbnail, lgFullscreen],

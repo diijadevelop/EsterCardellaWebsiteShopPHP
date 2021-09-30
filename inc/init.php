@@ -1,6 +1,4 @@
 <?php
-  define('ROOT_URL', 'http://localhost/EsterCardellaWebsiteShopPHP/');
-
-  define('ROOT_PATH', 'C:\\xampp\\htdocts\\EsterCardellaWebsiteShopPHP\\');
-
+define('ROOT_URL', 'http://localhost/EsterCardellaProva/');
+define('ROOT_PATH', 'C:\\xampp\\htdocs\\EsterCardellaProva\\');
  ?>

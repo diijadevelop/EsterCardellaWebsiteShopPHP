@@ -1,4 +1,4 @@
-ample (MySQLi Object-oriented)
+
 <?php
 $servername = "localhost";
 $username = "root";

@@ -11,14 +11,10 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
 
-	<link rel="stylesheet" href="../assets/css/style.css">
-	<link rel="stylesheet" href="../assets/css/style2.css">
+	<link rel="stylesheet" href="<?php echo ROOT_URL; ?>assets/css/style.css">
+	<link rel="stylesheet" href="<?php echo ROOT_URL; ?>assets/css/style2.css">
 
-  <link rel="stylesheet" href="../assets/css/lightgallery.css">
-  <link rel="stylesheet" href="..\assets\css\lg-zoom.css">
-  <link rel="stylesheet" href="..\assets\css\lg-thumbnail.css">
-  <link rel="stylesheet" href="..\assets\css\lg-fullscreen.css">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0-beta.2/css/lightgallery-bundle.min.css" integrity="sha512-rYeyP/7l5e89ap2He13nzhq2ksCEvohMZOdbMVTodaAkkQjDKXd4PVgkHy4AOLlFoJarfc8F2H854DjOQa5qdg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	</head>
 	<body>
 
@@ -32,11 +28,11 @@
             <div class="col-md-12 text-center">
               <h1 class="mb-4"><a href="index.php" class="logo textGradient">Ester Cardella</a></h1>
               <ul>
-                <li ><a href="index.php"><span>Home</span></a></li>
-                <li><a href="bio.php"><span>About</span></a></li>
-                <li><a href="gallery.php"><span>Gallery</span></a></li>
-                <li><a href="contact.php"><span>Contact</span></a></li>
-                <li class="active "><a href="shop.php"><span>Store</span></a></li>
+                <li ><a href="<?php echo ROOT_URL; ?>public/?page=homepage.php"><span>Home</span></a></li>
+                <li><a href="<?php echo ROOT_URL; ?>public/?page=bio.php"><span>About</span></a></li>
+                <li><a href="<?php echo ROOT_URL; ?>public/?page=gallery.php"><span>Gallery</span></a></li>
+                <li><a href="<?php echo ROOT_URL; ?>public/?page=contact.php"><span>Contact</span></a></li>
+                <li class="active "><a href="<?php echo ROOT_URL; ?>public/shop"><span>Store</span></a></li>
 
               </ul>
             </div>
@@ -70,10 +66,10 @@
       <header class="d-flex">
       	<div class="container">
 	        <div class="colorlib-navbar-brand">
-	          <a class="colorlib-logo mt-0" href="index.php">Ester Cardella</a>
+	          <a class="colorlib-logo mt-0" href="<?php echo ROOT_URL; ?>public/?page=homepage.php">Ester Cardella</a>
 	        </div>
           <div class="d-flex align-items-center">
-            <a href="shop.php" class="go-store textGradient btn text-uppercase">Store</a>
+            <a href="<?php echo ROOT_URL; ?>public/shop" class="go-store textGradient btn text-uppercase">Store</a>
             <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
 
           </div>

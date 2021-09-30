@@ -10,14 +10,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
 
-  	<link rel="stylesheet" href="assets/css/style.css">
-  	<link rel="stylesheet" href="assets/css/style2.css">
+  	<link rel="stylesheet" href="..\..\assets/css/style.css">
+  	<link rel="stylesheet" href="..\..\assets/css/style2.css">
 
-    <link rel="stylesheet" href="assets\css\lightgallery.css">
-    <link rel="stylesheet" href="assets\css\lg-zoom.css">
-    <link rel="stylesheet" href="assets\css\lg-thumbnail.css">
-    <link rel="stylesheet" href="assets\css\lg-fullscreen.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0-beta.2/css/lightgallery-bundle.min.css" integrity="sha512-rYeyP/7l5e89ap2He13nzhq2ksCEvohMZOdbMVTodaAkkQjDKXd4PVgkHy4AOLlFoJarfc8F2H854DjOQa5qdg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   </head>
 
@@ -31,27 +27,27 @@
       <div class="container-fluid">
         <div  class="nav navbar-expand-md d-flex flex-wrap align-items-center justify-content-between">
           <div class="colorlib-navbar-brand col-sm-12 col-md-auto">
-	          <a class="colorlib-logo" href="index.php">Ester Cardella</a>
+	          <a class="colorlib-logo" href="<?php echo ROOT_URL; ?>public/?page=homepage.php">Ester Cardella</a>
 	        </div>
 
            <div class="collapse navbar-collapse" id="navbarToggler">
 
           <ul class="nav col-lg-auto my-2 ml-4 flex-column-reverse flex-md-row align-items-end my-md-0 text-center">
             <li>
-              <a href="shop.php" class="nav-link text-secondary">
+              <a href="<?php echo ROOT_URL; ?>public/shop/?page=shop.php" class="nav-link text-secondary">
                 <i class="bi d-block mx-auto mb-1 fas fa-home"></i>
                 Home
               </a>
             </li>
             <li>
-              <a href="#" class=" nav-link text-white">
+              <a href="<?php echo ROOT_URL; ?>public/shop/?page=cart.php" class=" nav-link text-white">
                 <i class="bi d-block mx-auto mb-1 fas fa-shopping-cart"></i>
                 Carrello
               </a>
           </li>
 
                 <li>
-                  <a href="#" class="nav-link text-white">
+                  <a href="<?php echo ROOT_URL; ?>public/shop/?page=orders.php" class="nav-link text-white">
                   <i class="bi d-block mx-auto mb-1 far fa-calendar-alt"></i>
                   Orders
                   </a>
@@ -59,10 +55,10 @@
               </ul>
             </div>
             <div class="logs">
-                <a href="login.php">
+                <a href="<?php echo ROOT_URL; ?>public/shop/?page=login.php">
                   <button type="button" class="btn mr-2">Login</button>
                 </a>
-                <a href="register.php">
+                <a href="<?php echo ROOT_URL; ?>public/shop/?page=register.php">
                 <button type="button" class="btn ">Sign-up</button>
                 </a>
             </div>
