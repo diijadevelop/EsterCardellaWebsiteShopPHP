@@ -48,26 +48,23 @@
 </footer>
 
 <script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/popper.js"></script>
+<script src="assets/js/popper.js/"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="https://kit.fontawesome.com/78ffc68b9f.js" crossorigin="anonymous"></script>
 
 <script src="assets/js/main.js"></script>
 
-<script src="assets\js\lazysizes.min.js"></script>
-<script src="assets\js\isotope-docs.min.js"></script>
 
 <script src="assets\js\lightgallery.min.js"></script>
 <script src="assets\js\lg-fullscreen.min.js"></script>
 <script src="assets\js\lg-zoom.min.js"></script>
 <script src="assets\js\lg-thumbnail.min.js"></script>
 
-<script type="text/javascript" src="assets/js/slider.js" ></script>
-
 <script type="text/javascript">
 lightGallery(document.getElementById('lightgallery'), {
   plugins: [lgZoom, lgThumbnail, lgFullscreen],
 });
+
 </script>
 
 </body>

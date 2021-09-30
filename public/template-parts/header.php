@@ -11,13 +11,13 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
 
-	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" href="assets/css/style2.css">
+	<link rel="stylesheet" href="../assets/css/style.css">
+	<link rel="stylesheet" href="../assets/css/style2.css">
 
-  <link rel="stylesheet" href="assets\css\lightgallery.css">
-  <link rel="stylesheet" href="assets\css\lg-zoom.css">
-  <link rel="stylesheet" href="assets\css\lg-thumbnail.css">
-  <link rel="stylesheet" href="assets\css\lg-fullscreen.css">
+  <link rel="stylesheet" href="../assets/css/lightgallery.css">
+  <link rel="stylesheet" href="..\assets\css\lg-zoom.css">
+  <link rel="stylesheet" href="..\assets\css\lg-thumbnail.css">
+  <link rel="stylesheet" href="..\assets\css\lg-fullscreen.css">
 
 	</head>
 	<body>

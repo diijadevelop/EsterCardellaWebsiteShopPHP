@@ -1,4 +1,5 @@
-<?php include 'template-parts\header.php' ?>
+<?php include '../inc/init.php' ?>
+<?php include ROOT_PATH . 'public\\template-parts\\header.php' ?>
 
       <section class="bg-home">
 	      <div class="container first-content mt-5">
@@ -52,4 +53,4 @@
     </div>
   </div>
 
-  <?php include 'template-parts\footer.php' ?>
+  <?php include ROOT_PATH . 'public/template-parts/footer.php' ?>
