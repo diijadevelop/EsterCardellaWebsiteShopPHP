@@ -1,4 +1,10 @@
+<?php
 
+if(!defined('ROOT_URL')){
+  die;
+}
+
+?>
     <div class="container-fluid d-flex justify-content-center">
 
     <div class="card mt-5 pt-5">

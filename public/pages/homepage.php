@@ -1,4 +1,10 @@
+<?php
 
+if(!defined('ROOT_URL')){
+  die;
+}
+
+?>
       <section class="bg-home">
 	      <div class="container first-content mt-5">
 	        <div class="row no-gutters align-items-center ">

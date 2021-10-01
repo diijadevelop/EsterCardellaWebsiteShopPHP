@@ -1,11 +1,19 @@
+<?php
+
+if(!defined('ROOT_URL')){
+  die;
+}
+
+?>
+
 <div class="container py-5 my-5 d-flex justify-content-center">
 
   <div class="row pt-5 mt-5 d-flex justify-content-around">
 
     <div class="col-12 col-md-6">
-      <div class="">
+      <div class=" shadow">
         <a href="<?php echo ROOT_URL; ?>shop/?page=product-list">
-          <img class="card-img-top main-card-img" src="<?php echo ROOT_URL; ?>assets/img/details/cemetery_300_details.jpg" alt="Card image poster">
+          <img class="card-img-top w-100 img-fluid main-card-img" src="<?php echo ROOT_URL; ?>assets\img\low\cowgirl_300-low.jpg" alt="Card image poster">
         </a>
         <div class="card-body text-center">
           <h5 class="card-title h1 textGradient">Posters!</h5>
@@ -15,7 +23,7 @@
     </div>
 
     <div class="col-12 col-md-6">
-      <div class="">
+      <div class=" shadow">
         <a href="<?php echo ROOT_URL; ?>shop/?page=product-list">
           <img class="card-img-top main-card-img" src="<?php echo ROOT_URL; ?>assets/img/store/tshirt.jpg" alt="Card image poster">
         </a>

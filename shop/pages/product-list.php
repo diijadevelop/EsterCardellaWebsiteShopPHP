@@ -1,4 +1,12 @@
 <?php
+
+if(!defined('ROOT_URL')){
+  die;
+}
+
+?>
+
+<?php
 $productMgr = new ProductManager();
 $products = $productMgr->getAll();
 //  $products = $productMgr->get(1);

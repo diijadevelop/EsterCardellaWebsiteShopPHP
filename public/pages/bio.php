@@ -1,3 +1,11 @@
+<?php
+
+if(!defined('ROOT_URL')){
+  die;
+}
+
+?>
+
         <section class="pt-5 mt-5">
           <div class="container pb-5">
             <h1 class="my-md-4 text-center text-md-left textGradient title h1 bio-title pt-md-5">Chi sono?</h1>

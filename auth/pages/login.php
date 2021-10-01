@@ -1,3 +1,11 @@
+<?php
+
+if(!defined('ROOT_URL')){
+  die;
+}
+
+?>
+
 <div class="container py-5 my-5 ">
   <div class="d-flex justify-content-center h-100 ">
     <div class="card my-5 ">

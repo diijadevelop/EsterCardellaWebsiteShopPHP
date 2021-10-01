@@ -1,3 +1,11 @@
+<?php
+
+if(!defined('ROOT_URL')){
+  die;
+}
+
+?>
+
         <section class="mt-5">
         			<div class="container">
         				<div class="row mb-5 mb-md-5 align-items-center justify-content-center">
