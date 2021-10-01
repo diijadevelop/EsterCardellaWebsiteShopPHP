@@ -21,10 +21,9 @@
 
 
 
-  <header class="bg-transparent">
-    <div class="px-3 mb-5">
-
-      <div class="container-fluid">
+  <header class="pt-3 p-md-0 m-md-0" style="background-color:black;">
+    <div class=" mb-5">
+      <div class="container">
         <div  class="nav navbar-expand-md d-flex flex-wrap align-items-center justify-content-between">
           <div class="colorlib-navbar-brand col-sm-12 col-md-auto">
 	          <a class="colorlib-logo" href="<?php echo ROOT_URL; ?>public/?page=homepage">Ester Cardella</a>
@@ -32,7 +31,7 @@
 
            <div class="collapse navbar-collapse" id="navbarToggler">
 
-          <ul class="nav col-lg-auto my-2 ml-4 flex-column-reverse flex-md-row align-items-end my-md-0 text-center">
+          <ul class="nav col-lg-auto mb-2 ml-4 flex-column-reverse flex-md-row align-items-end my-md-0 text-center">
             <li>
               <a href="<?php echo ROOT_URL; ?>shop" class="nav-link text-secondary">
                 <i class="bi d-block mx-auto mb-1 fas fa-home"></i>
@@ -41,7 +40,10 @@
             </li>
             <li>
               <a href="<?php echo ROOT_URL; ?>shop/?page=cart" class=" nav-link text-white">
-                <i class="bi d-block mx-auto mb-1 fas fa-shopping-cart"></i>
+                <i class="bi d-block mx-auto mb-1 fas fa-shopping-cart">
+                  <span class="badge badge-pill" style="  background: linear-gradient(#673ab7, #314da3);
+">1</span>
+                </i>
                 Carrello
               </a>
           </li>
