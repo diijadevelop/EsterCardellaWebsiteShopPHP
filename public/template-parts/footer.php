@@ -17,7 +17,7 @@
         <a class="nav-link" href="<?php echo ROOT_URL; ?>public/?page=contact">&nbsp;&nbsp;&nbsp;Contatti&nbsp;&nbsp;&nbsp;</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="<?php echo ROOT_URL; ?>public/shop">&nbsp;&nbsp;&nbsp;Shop&nbsp;&nbsp;&nbsp;</a>
+        <a class="nav-link" href="<?php echo ROOT_URL; ?>shop">&nbsp;&nbsp;&nbsp;Shop&nbsp;&nbsp;&nbsp;</a>
       </li>
     </ul>
     <hr class="mx-auto my-30 my-md-40">
@@ -46,15 +46,10 @@
     </section>
   </div>
 </footer>
-
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://kit.fontawesome.com/78ffc68b9f.js" crossorigin="anonymous"></script>
-
-<script src="../assets/js/main.js"></script>
-
-
 <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.2.1/lightgallery.umd.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0-beta.2/plugins/fullscreen/lg-fullscreen.min.js" integrity="sha512-DzxO8pqFx7E5gbBhlJcqI2KYWMs14FWl4oFYHLOEj2/Ju6dIuUhwZDGRailzJHLAym4co2Z+nnhrCuy6ht/NqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0-beta.2/plugins/zoom/lg-zoom.min.js" integrity="sha512-0mtVOmUIpVwfDhhqVsG6tbynJh6BSKhw4WTNGB9GAhQrpy/4ZmB6KO/5hY70VRV7i8SRCXUkohPsqxPguEh9Lw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -65,6 +60,41 @@ lightGallery(document.getElementById('lightgallery'), {
 });
 
 </script>
+<script>
+  $('img[data-enlargeable]').addClass('img-enlargeable').click(function() {
+  var src = $(this).attr('src');
+  var modal;
+
+  function removeModal() {
+    modal.remove();
+    $('body').off('keyup.modal-close');
+  }
+  modal = $('<div>').css({
+    background: 'RGBA(0,0,0,.5) url(' + src + ') no-repeat center',
+    backgroundSize: 'contain',
+    width: '100%',
+    height: '100%',
+    position: 'fixed',
+    zIndex: '10000',
+    top: '0',
+    left: '0',
+    cursor: 'zoom-out'
+  }).click(function() {
+    removeModal();
+  }).appendTo('body');
+  //handling ESC
+  $('body').on('keyup.modal-close', function(e) {
+    if (e.key === 'Escape') {
+      removeModal();
+    }
+  });
+});
+</script>
+
+<script src="<?php echo ROOT_URL; ?>assets/js/main.js"></script>
+
+
+
 
 </body>
 </html>

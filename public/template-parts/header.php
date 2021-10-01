@@ -32,7 +32,7 @@
                 <li><a href="<?php echo ROOT_URL; ?>public/?page=bio"><span>About</span></a></li>
                 <li><a href="<?php echo ROOT_URL; ?>public/?page=gallery"><span>Gallery</span></a></li>
                 <li><a href="<?php echo ROOT_URL; ?>public/?page=contact"><span>Contact</span></a></li>
-                <li class="active "><a href="<?php echo ROOT_URL; ?>public/shop"><span>Store</span></a></li>
+                <li class="active "><a href="<?php echo ROOT_URL; ?>shop"><span>Store</span></a></li>
 
               </ul>
             </div>
@@ -69,7 +69,7 @@
 	          <a class="colorlib-logo mt-0" href="<?php echo ROOT_URL; ?>public/?page=homepage">Ester Cardella</a>
 	        </div>
           <div class="d-flex align-items-center">
-            <a href="<?php echo ROOT_URL; ?>public/shop" class="go-store textGradient btn text-uppercase">Store</a>
+            <a href="<?php echo ROOT_URL; ?>shop" class="go-store textGradient btn text-uppercase">Store</a>
             <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
 
           </div>

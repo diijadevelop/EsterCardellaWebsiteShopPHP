@@ -2,7 +2,7 @@
   <div class="row my-5 text-center">
 
     <div class="card p-5 mb-5 mb-md-0 col-12 col-md-6 mb-5" style="width: 18rem; ">
-      <a href="http://localhost/EsterCardellaProva/public/shop/?page=poster.php" class="card-img-top d-block" style="width: 100%; height: 20rem; border-radius: 20px; opacity: 0.5; background-image: url('../../assets/img/cemetery_300-low.jpg')">
+      <a href="http://localhost/EsterCardellaProva/shop/?page=poster.php" class="card-img-top d-block" style="width: 100%; height: 20rem; border-radius: 20px; opacity: 0.5; background-image: url('../../assets/img/cemetery_300-low.jpg')">
       </a>
       <div class="card-body">
         <h5 class="card-title h1 textGradient">Posters!</h5>

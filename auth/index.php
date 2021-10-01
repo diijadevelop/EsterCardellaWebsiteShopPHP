@@ -4,7 +4,7 @@
 
 <?php include '../inc/init.php' ?>
 
-<?php include ROOT_PATH . 'public\template-parts\header.php' ?>
+<?php include ROOT_PATH . 'public\template-parts\shop-header.php' ?>
 
 <?php include ROOT_PATH . 'auth/pages/' . $page . '.php'?>
 
