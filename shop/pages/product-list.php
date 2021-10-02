@@ -4,6 +4,17 @@ if(!defined('ROOT_URL')){
   die;
 }
 
+if (isset($_POST['add_to_cart'])) {
+
+    $productId = trim($_POST['id']);
+
+    $cm = new CartManager();
+    $cartId = $cm->getCurrentCartId();
+    //var_dump($cartId); die;
+    $cm->addToCart($productId, $cartId);
+
+    echo 'ok, aggiunto al carrello';
+  }
 ?>
 
 <?php
@@ -29,7 +40,10 @@ $products = $productMgr->getAll();
                 <p class="card-text"><?php echo $product->description ?></p>
                 <div class="d-flex justify-content-between">
                   <a href="#" class="btn btn-primary">Buy Now</a>
-                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                  <form method="post">
+                    <input type="hidden" name="id" value="<?php echo $product->id ?>">
+                    <input type="submit" name="add_to_cart" value="Add to cart" class="btn">
+                  </form>
                 </div>
                 <a href="<?php echo ROOT_URL . 'shop?page=view-product&id=' . $product->id?>" class="btn btn-primary w-100">Details</a>
             </div>

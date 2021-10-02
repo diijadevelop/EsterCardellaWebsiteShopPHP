@@ -21,7 +21,7 @@
 
 
 
-  <header class="pt-3 p-md-0 m-md-0" style="background-color:black;">
+  <header class="pt-3 p-md-0 m-md-0" style="background-color:transparent;">
     <div class=" mb-5">
       <div class="container">
         <div  class="nav navbar-expand-md d-flex flex-wrap align-items-center justify-content-between">
@@ -51,7 +51,7 @@
                 <li>
                   <a href="<?php echo ROOT_URL; ?>shop/?page=my-orders" class="nav-link text-white">
                   <i class="bi d-block mx-auto mb-1 far fa-calendar-alt"></i>
-                  Orders
+                  Ordini
                   </a>
                 </li>
               </ul>

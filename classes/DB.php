@@ -13,6 +13,7 @@ class DB {
       echo 'Failed to connect to MySql ' . mysqli_connect_errno();
     }
     $this->pdo = new PDO('mysql:dbname='. DB_NAME .';host=' . DB_HOST, DB_USER, DB_PASS);
+    $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   }
 
   public function query($sql) {
@@ -25,6 +26,10 @@ class DB {
     $data = $q->fetchAll();
     return $data;
   }
+public function execute($sql){
+  $stmt = $this->pdo->prepare($sql);
+  $stmt->execute();
+}
 
  public function select_all($tableName, $columns = array()) {
 
