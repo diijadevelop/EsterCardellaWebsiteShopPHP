@@ -6,31 +6,49 @@ class DB {
   public $pdo;
 
   public function __construct() {
-
     global $conn;
     $this->conn = $conn;
     if (mysqli_connect_errno()) {
       echo 'Failed to connect to MySql ' . mysqli_connect_errno();
+      die;
     }
     $this->pdo = new PDO('mysql:dbname='. DB_NAME .';host=' . DB_HOST, DB_USER, DB_PASS);
-    $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-  }
-
-  public function query($sql) {
-    $q = $this->pdo->query($sql);
-    if(!$q)
-    {
-      die("Execute query error, because: ". print_r($this->pdo->errorInfo(),true) );
+  //  $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     }
 
-    $data = $q->fetchAll();
-    return $data;
+  public function query($sql) {
+    // try
+    // {
+      $q = $this->pdo->query($sql);
+      if(!$q)
+        {
+          // throw new Exception("Error executing query...");
+          return;
+    //      die("Execute query error, because: ". print_r($this->pdo->errorInfo(),true) );
+        }
+      $data = $q->fetchAll();
+      return $data;
+    // }
+    // catch(Exception $e)
+    // {
+    //   throw $e;
+    // }
   }
-public function execute($sql){
-  $stmt = $this->pdo->prepare($sql);
-  $stmt->execute();
-}
+//
+//
+//
+// // public function execute($sql){
+// //   $stmt = $this->pdo->prepare($sql);
+// //   $stmt->execute();
+// // }
+//
 
+ public function execute($sql){
+   $stmt = $this->pdo->prepare($sql);
+   $stmt->execute();
+  }
+
+  
  public function select_all($tableName, $columns = array()) {
 
     $query = 'SELECT ';
@@ -48,8 +66,8 @@ public function execute($sql){
     $resultArray = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
     mysqli_free_result($result);
-
     return $resultArray;
+
   }
 
  public function select_one($tableName, $columns = array(), $id) {

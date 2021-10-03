@@ -5,29 +5,47 @@ if(!defined('ROOT_URL')){
 }
 
 $cart_total = [
-  'num_products'=>0,
-  'total'=>35,
+  'num_products' => 2,
+  'total' => 21,
 ];
 
-$cart_items = [];
-// = [
-// [
-//   'name' => 'Prodotto 1',
-//   'description' => 'Description',
-//   'single_price' => '10',
-//   'quantity' => '2',
-//   'total_price' => '20',
-// ],
-// [
-//   'name' => 'Prodotto 2',
-//   'description' => 'Description',
-//   'single_price' => '3',
-//   'quantity' => '4',
-//   'total_price' => '12',
-// ],
-// ];
+$cart_items = [
+  [
+    'name' => 'Prodotto 1',
+    'description' => 'Description',
+    'single_price' => 3,
+    'quantity' => 2,
+    'total_price' => 6,
+  ],
+  [
+    'name' => 'Prodotto 2',
+    'description' => 'Description',
+    'single_price' => 5,
+    'quantity' => 3,
+    'total_price' => 15,
+  ],
+];
 
-//$cm->getCartTotal();
+// $cm= new CartManager();
+// $cartId = $cm->getCurrentCartId();
+
+// if (isset($_POST['minus'])) {
+//   $cart_id = esc($_POST['cart_id']);
+//   $product_id = esc($_POST['product_id']);
+//   $cm->removeFromCart($product_id, $cart_id);
+// }
+
+// if (isset($_POST['plus'])) {
+//   $cart_id = esc($_POST['cart_id']);
+//   $product_id = esc($_POST['product_id']);
+//   $cm->addToCart($product_id, $cart_id);
+// }
+
+// $cart_total = $cm->getCartTotal($cartId);
+// $cart_items = $cm->getCartItems($cartId);
+// var_dump($cartId);
+// var_dump($cart_items);
+// var_dump($cart_total);
 //?>
 
 <section class="p-5 m-5 container" style="height:100vh;">
@@ -72,7 +90,7 @@ $cart_items = [];
                   <span>Total</span>
                 </div>
                 <div class="col-6 col-lg-2 offset-lg-6">
-                <strong><?php echo $cart_total['total']?> €</strong>
+                <strong>€ <?php echo $cart_total['total']?></strong>
                 </div>
               </div>
             </li>

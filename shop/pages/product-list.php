@@ -5,8 +5,9 @@ if(!defined('ROOT_URL')){
 }
 
 if (isset($_POST['add_to_cart'])) {
+    //Aggiungi al carrello
 
-    $productId = trim($_POST['id']);
+    $productId = htmlspecialchars(trim($_POST['id']));
 
     $cm = new CartManager();
     $cartId = $cm->getCurrentCartId();
@@ -15,9 +16,7 @@ if (isset($_POST['add_to_cart'])) {
 
     echo 'ok, aggiunto al carrello';
   }
-?>
 
-<?php
 $productMgr = new ProductManager();
 $products = $productMgr->getAll();
 //  $products = $productMgr->get(1);

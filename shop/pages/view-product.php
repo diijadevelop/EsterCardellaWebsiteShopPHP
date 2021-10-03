@@ -11,16 +11,17 @@ if(!(isset($_GET['id']))){
 
 if (isset($_POST['add_to_cart'])) {
 
-    $productId = trim($_POST['id']);
+    $productId = htmlspecialchars(trim($_POST['id']));
 
     $cm = new CartManager();
     $cartId = $cm->getCurrentCartId();
-    //var_dump($cartId); die;
-    $cm->addToCart($productId, $cartId);
 
-    $alertMsg = 'add_to_cart';
-    echo "<script>location.href='".ROOT_URL."shop?page=products-list&msg=add_to_cart';</script>";
-    exit;
+    //aggiungi al carrello cart id il prodotto product id
+    $cm->addToCart($productId, $cartId);
+    //stampa un msg per l'utente
+        // $alertMsg = 'add_to_cart';
+        // echo "<script>location.href='".ROOT_URL."shop?page=products-list&msg=add_to_cart';</script>";
+        // exit;
   }
 
 $id = htmlspecialchars(trim($_GET['id']));
@@ -49,7 +50,7 @@ if(! (property_exists($product, 'id'))){
           <div class="mb-5">
             <form method="post">
               <input type="hidden" name="id" value="<?php echo $product->id ?>">
-              <input type="submit" name="add_to_cart" value="Add to cart" class="btn">
+              <input type="submit" name="add_to_cart" value="Aggiungi al carrello" class="btn">
             </form>
           </div>
         </div>

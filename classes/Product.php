@@ -17,7 +17,7 @@ class Product {
   }
 }
 
-class ProductManager extends DBManager {
+class ProductManager extends DbManager {
 
   public function __construct(){
     parent::__construct();
