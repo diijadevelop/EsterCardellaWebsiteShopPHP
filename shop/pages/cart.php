@@ -3,59 +3,33 @@
 if(!defined('ROOT_URL')){
   die;
 }
+$cm= new CartManager();
+$cartId = $cm->getCurrentCartId();
 
-$cart_total = [
-  'num_products' => 2,
-  'total' => 21,
-];
+if (isset($_POST['minus'])) {
+  //rimuovo dal carrello
+  $productId = htmlspecialchars(trim($_POST['id']));
+  $cm->removeFromCart($productId, $cartId);
+}
 
-$cart_items = [
-  [
-    'name' => 'Prodotto 1',
-    'description' => 'Description',
-    'single_price' => 3,
-    'quantity' => 2,
-    'total_price' => 6,
-  ],
-  [
-    'name' => 'Prodotto 2',
-    'description' => 'Description',
-    'single_price' => 5,
-    'quantity' => 3,
-    'total_price' => 15,
-  ],
-];
+if (isset($_POST['plus'])) {
+  //aggiungo al carrello
+  $productId = htmlspecialchars(trim($_POST['id']));
+  $cm->addToCart($productId, $cartId);
+}
+$cart_total = $cm->getCartTotal($cartId);
+$cart_items = $cm->getCartItems($cartId);
 
-// $cm= new CartManager();
-// $cartId = $cm->getCurrentCartId();
-
-// if (isset($_POST['minus'])) {
-//   $cart_id = esc($_POST['cart_id']);
-//   $product_id = esc($_POST['product_id']);
-//   $cm->removeFromCart($product_id, $cart_id);
-// }
-
-// if (isset($_POST['plus'])) {
-//   $cart_id = esc($_POST['cart_id']);
-//   $product_id = esc($_POST['product_id']);
-//   $cm->addToCart($product_id, $cart_id);
-// }
-
-// $cart_total = $cm->getCartTotal($cartId);
-// $cart_items = $cm->getCartItems($cartId);
-// var_dump($cartId);
-// var_dump($cart_items);
-// var_dump($cart_total);
-//?>
+?>
 
 <section class="p-5 m-5 container" style="height:100vh;">
     <div class="w-75 order-md-2 my-5 mx-auto">
           <h4 class="d-flex justify-content-between align-items-center mb-3">
-            <span class="h1 textGradient">Il tuo carrello:</span>
-            <span class="badge badge-pill" style="  background: linear-gradient(#673ab7, #314da3);"><?php echo $cart_total['num_products']?> Prodott<?php if($cart_total['num_products']>1 || $cart_total['num_products']==0){ echo 'i'; }else{ echo 'o';}; ?></span>
-          </h4>
-          <ul class="list-group mb-3">
 <?php if(count($cart_items)>0): ?>
+          <span class="h1 textGradient">Il tuo carrello:</span>
+          <span class="badge badge-pill" style="  background: linear-gradient(#673ab7, #314da3);"><?php echo $cart_total['num_products']?> Prodott<?php if($cart_total['num_products']>1 || $cart_total['num_products']==0){ echo 'i'; }else{ echo 'o';}; ?></span>
+        </h4>
+        <ul class="list-group mb-3">
             <?php
               foreach($cart_items as $item):
             ?>
@@ -70,11 +44,16 @@ $cart_items = [
                   <span class="text-muted">€ <?php echo $item['single_price']?></span>
                 </div>
                 <div class="col-6 col-lg-4">
+
+                <form method="post">
                   <div class="btn-group mb-3" role="group">
-                    <button type="button" class="btn  btn-sm btn-secondary">-</button>
+                    <button name="minus"type="submit" class="btn  btn-sm btn-secondary">-</button>
                     <span class="border px-3 mt-3 text-dark text-center"><?php echo $item['quantity']?></span>
-                    <button type="button " class="btn  btn-sm btn-secondary">+</button>
+                    <button name="plus"type="submit " class="btn  btn-sm btn-secondary">+</button>
+                    <input type="hidden" name="id" value="<?php echo $item['id'] ?>">
                   </div>
+                </form>
+
                 </div>
                 <div class="col-6 col-lg-2">
                   <strong class="text-dark">€ <?php echo $item['total_price']?></strong>

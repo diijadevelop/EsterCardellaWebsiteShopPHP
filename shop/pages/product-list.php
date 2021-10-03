@@ -13,8 +13,6 @@ if (isset($_POST['add_to_cart'])) {
     $cartId = $cm->getCurrentCartId();
     //var_dump($cartId); die;
     $cm->addToCart($productId, $cartId);
-
-    echo 'ok, aggiunto al carrello';
   }
 
 $productMgr = new ProductManager();

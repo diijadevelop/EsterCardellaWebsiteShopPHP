@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html lang="it">
   <head>
@@ -41,8 +43,7 @@
             <li>
               <a href="<?php echo ROOT_URL; ?>shop/?page=cart" class=" nav-link text-white">
                 <i class="bi d-block mx-auto mb-1 fas fa-shopping-cart">
-                  <span class="badge badge-pill" style="  background: linear-gradient(#673ab7, #314da3);
-">1</span>
+                  <span class="badge badge-pill js-totcartitems" style="  background: linear-gradient(#673ab7, #314da3);"></span>
                 </i>
                 Carrello
               </a>

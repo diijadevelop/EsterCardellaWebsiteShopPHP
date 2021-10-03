@@ -30,7 +30,7 @@ section{
 
 section.bg-home::after{
   content: '';
-  background: url('../img/HD/Donna_con_serpenti.jpg') no-repeat center top;
+  background: url('<?php echo ROOT_URL?>assets/img/HD/Donna_con_serpenti.jpg') no-repeat center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

@@ -48,7 +48,7 @@ class DB {
    $stmt->execute();
   }
 
-  
+
  public function select_all($tableName, $columns = array()) {
 
     $query = 'SELECT ';

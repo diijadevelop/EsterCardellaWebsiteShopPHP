@@ -1,3 +1,10 @@
+<?php
+$cm= new CartManager();
+$cartId = $cm->getCurrentCartId();
+$cart_total = $cm->getCartTotal($cartId);
+
+?>
+
 <footer id="footer" class="pb-50 pb-md-100">
   <div class="footer-bg">
 
@@ -93,7 +100,11 @@ lightGallery(document.getElementById('lightgallery'), {
 
 <script src="<?php echo ROOT_URL; ?>assets/js/main.js"></script>
 
-
+<script>
+$(document).ready(function(){
+    $('.js-totcartitems').html('<?php echo $cart_total['num_products']?>');
+});
+</script>
 
 
 </body>
