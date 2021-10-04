@@ -4,6 +4,14 @@
     die;
   }
 
+
+function var_dump_pre($mixed = null) {
+  echo '<pre class=" text-light" style="font-size: 1rem;  width:100%; margin-left: 10em;">';
+  var_dump($mixed);
+  echo '</pre>';
+  return null;
+}
+
  function esc($str) {
     global $conn;
     return mysqli_real_escape_string($conn, htmlspecialchars($str));

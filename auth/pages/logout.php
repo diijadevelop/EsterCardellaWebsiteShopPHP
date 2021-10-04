@@ -3,13 +3,7 @@
 if(!defined('ROOT_URL')){
   die;
 }
-
+unset($_SESSION['user']);
+echo '<script>location.href="'.ROOT_URL.'shop"</script>';
+exit;
 ?>
-
-<section class="p-5 m-5">
-  <div class="container p-5 m-5">
-    <p class="lead">
-      Logout
-    </p>
-  </div>
-</section>

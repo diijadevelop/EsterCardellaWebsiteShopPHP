@@ -20,3 +20,42 @@ CREATE TABLE cart_item(
   PRIMARY KEY(id),
   FOREIGN KEY (product_id) REFERENCES product(id),
 );
+
+--
+-- Struttura della tabella `user`
+--
+
+CREATE TABLE user_type(
+  id INT NOT NULL AUTO_INCREMENT,
+  name VARCHAR(50) NOT NULL,
+  PRIMARY KEY(id)
+);
+
+INSERT INTO user_type(
+  id, name
+) VALUES (
+  1, 'Administrator'
+),(
+  2, 'Regular'
+);
+
+
+CREATE TABLE user
+(
+  id INT NOT NULL AUTO_INCREMENT,
+  email VARCHAR(255) NOT NULL,
+  password VARCHAR(255) NOT NULL,
+  user_type_id INT NOT NULL,
+  PRIMARY KEY(id),
+  FOREIGN KEY (user_type_id) REFERENCES user_type(id)
+);
+
+INSERT INTO user
+(
+  email, password, user_type_id
+) VALUES (
+  'admin@mail.com', MD5('password'),1
+),
+  (
+  'regular@mail.com', MD5('password'),2
+);

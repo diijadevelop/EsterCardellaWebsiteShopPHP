@@ -54,7 +54,6 @@ $cart_total = $cm->getCartTotal($cartId);
   </div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://kit.fontawesome.com/78ffc68b9f.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.2.1/lightgallery.umd.min.js"></script>

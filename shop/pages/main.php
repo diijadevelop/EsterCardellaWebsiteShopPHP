@@ -6,9 +6,9 @@ if(!defined('ROOT_URL')){
 
 ?>
 
-<div class="container py-5 my-5 d-flex justify-content-center">
+<div class="container d-flex justify-content-center">
 
-  <div class="row pt-5 mt-5 d-flex justify-content-around">
+  <div class="row mt-5" style="height: 100vh">
 
     <div class="col-12 col-md-6">
       <div class=" shadow">

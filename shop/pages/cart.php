@@ -22,8 +22,8 @@ $cart_items = $cm->getCartItems($cartId);
 
 ?>
 
-<section class="p-5 m-5 container" style="height:100vh;">
-    <div class="w-75 order-md-2 my-5 mx-auto">
+<section class="container" style="height:100vh;">
+    <div class="w-75  my-5 mx-auto">
           <h4 class="d-flex justify-content-between align-items-center mb-3">
 <?php if(count($cart_items)>0): ?>
           <span class="h1 textGradient">Il tuo carrello:</span>
